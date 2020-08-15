@@ -40,4 +40,4 @@ cp /opt/JDownloader/sevenzip* /opt/JDownloader/libs/
 su-exec ${UID}:${GID} "$@"
 
 # Keep container alive when jd2 restarts
-while sleep 3600; do :; done
+# while sleep 3600; do :; done
