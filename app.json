@@ -14,12 +14,10 @@
       "required":  "true"
     },
     "UID": {
-      "description": "Specifies the UID the daemon should run as. All created files will be owned by this UID. Defaults to 1000.",
-      "required":  "false"
+      "description": "Specifies the UID the daemon should run as. All created files will be owned by this UID. Defaults to 1000."
     },
     "GID": {
-      "description": "Specifies the GID for all created files. This only works in combination with the UID. Defaults to 100 for users.",
-      "required":  "false"
+      "description": "Specifies the GID for all created files. This only works in combination with the UID. Defaults to 100 for users."
     }
   }
 }
