@@ -1,7 +1,25 @@
 {
-  "name": "jd2",
+  "name": "headless-jd2",
   "description": "This app does one little thing, and does it well.",
   "keywords": ["cyka", "blyat"],
-  "repository": "https://github.com/ssnjrthegr8/ngzebt.git",
-  "stack": "container"
+  "repository": "https://github.com/ssnjrthegr8/headless-jd2-docker.git",
+  "stack": "container",
+  "env": {
+    "EMAIL": {
+      "description": "The MyJDownloader account e-mail. Is written automatically to config-file, if set.",
+      "required":  "true"
+    },
+    "PASSWORD": {
+      "description": "The MyJDownloader account password. Is written automatically to config-file, if set.",
+      "required":  "true"
+    },
+    "UID": {
+      "description": "Specifies the UID the daemon should run as. All created files will be owned by this UID. Defaults to 1000.",
+      "required":  "false"
+    },
+    "GID": {
+      "description": "Specifies the GID for all created files. This only works in combination with the UID. Defaults to 100 for users.",
+      "required":  "false"
+    }
+  }
 }
