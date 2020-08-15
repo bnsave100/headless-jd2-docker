@@ -6,18 +6,18 @@
   "stack": "container",
   "env": {
     "EMAIL": {
-      "description": "The MyJDownloader account e-mail. Is written automatically to config-file, if set.",
-      "required":  "true"
+      "description": "The MyJDownloader account e-mail. Is written automatically to config-file, if set."
     },
     "PASSWORD": {
-      "description": "The MyJDownloader account password. Is written automatically to config-file, if set.",
-      "required":  "true"
+      "description": "The MyJDownloader account password. Is written automatically to config-file, if set."
     },
     "UID": {
-      "description": "Specifies the UID the daemon should run as. All created files will be owned by this UID. Defaults to 1000."
+      "description": "Specifies the UID the daemon should run as. All created files will be owned by this UID. Defaults to 1000.",
+      "required":  false
     },
     "GID": {
-      "description": "Specifies the GID for all created files. This only works in combination with the UID. Defaults to 100 for users."
+      "description": "Specifies the GID for all created files. This only works in combination with the UID. Defaults to 100 for users.",
+      "required":  false
     }
   }
 }
